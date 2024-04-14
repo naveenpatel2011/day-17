@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+  }
+  .first-column {
+    flex-basis: 40%; 
+    background-color: #f0f0f0;
+    padding: 50px;
+    margin: 20px; 
+  }
+  .second-column {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    padding: 25px;
+    margin: 20px;
+  }
+  .second-column div {
+    flex-grow: 1; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 20px;
+   ;
+  }
+  .slider-container {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px 0;
+ }
+
+ .skill {
+   margin-bottom: 20px;
+   position: relative;
+   height: 30px;
+   background-color:whitesmoke;
+   border-radius: 15px;
+   overflow: hidden;
+ }
+
+ .skill-bar {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   background-color:#00a89ae2;
+   border-radius: 10px;
+   transition: width 0.5s ease;
+   
+ }
+ .texcol{
+   color: #00a89ae2;
+ }
+
+ .skill-label {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 14px;
+   text-align: center;
+ }
+ footer {
+   text-align: center;
+   padding: 3px;
+   background-color: #00a89ae2;
+   color: white;
+   height: 120px;
+ }
+ button{
+   background-color: #00a89ae2;
+ }
+ .email-icon::before {
+   content: '\1F4E7';
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="first-column">
+    <img src="./images/WhatsApp Image 2024-03-26 at 9.03.02 PM.jpeg" width="100"  height="90"       >
+    <p>Designer</p>
+    <p>London, UK</p>
+    <p><span>&#x1F4E7;</span>ex@email.com</p>
+    <p> &#9742; 1224435543</p>
+
+    <h2>SKILLS</h2>
+
+    <div class="slider-container">
+      <div class="skill">
+        <div class="skill-bar" style="width: 90%;"></div>
+        <span class="skill-label">Adobe Photoshop - 90%</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width: 80%;"></div>
+        <span class="skill-label">Photography - 80%</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width: 75%;"></div>
+        <span class="skill-label">Illustrator - 75%</span>
+      </div>
+    
+      <div class="skill">
+         <p>media</p>
+        <div class="skill-bar" style="width: 50%;"></div>
+       
+        <span class="skill-label" text-align="center">Media - 50%</span>
+      </div>
+    </div>
+
+    <h2>Languages</h2>
+
+    <div class="slider-container">
+      <div class="skill">
+        <div class="skill-bar" style="width: 100%;"></div>
+        <span class="skill-label">GERMAN</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width:75%;"></div>
+        <span class="skill-label">SPANISH</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width: 50%;"></div>
+        <span class="skill-label">GERMAN</span>
+      </div>
+   
+    </div>
+    
+  </div>
+  <div class="second-column">
+    <div>
+      <h2>Work Experience</h2>
+      <p>Front End Developer/ W3 schools</p>
+      <p>jan 2015-<button>Current</button></p>
+      <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+      <hr>
+      <p>Web Developer/Something.com</p>
+      <p class="texcol" >Mar 2012 - Dec 2014
+      </p>
+      <p>
+         Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+      </p>
+      <hr>
+      <h3>Graphic Designer / Designsomething.com</h3>
+      <p class="texcol">Jun 2010 - Mar 2012</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <h3>w3schools.com</h3>
+         <p class="texcol">forever</p>
+         <p>Web Development! All I need to know in one place</p>
+         <hr>
+         <h3>London Business School</h3>
+         <p class="texcol">2013 - 2015</p>
+         <p>Master Degree</p>
+         <hr>
+         <h3>Schoole coding</h3>
+         <p class="texcol">2010 - 2013</p>
+         <p>Bachelor Degree</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+<p>find me on social media</p>
+<p>Powered bt w3schools</p>
+</footer>
+
+</body>
+</html>
